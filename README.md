@@ -6,9 +6,9 @@ Para o desenvolvimento nativo de apps para iOS, nós temos duas opções: Object
 
 ## Objective-C
 
-Objective-C é uma linguagem de longa data, criada no inicio da década de 1980 e baseada em linguagens como [C](https://www.gnu.org/software/libc/manual/pdf/libc.pdf) e [Smalltalk](http://smalltalk.gnu.org/documentation)
+Objective-C é uma linguagem de longa data, criada no inicio da década de 1980 e baseada em linguagens como [C](https://www.gnu.org/software/libc/manual/pdf/libc.pdf) e [Smalltalk](http://smalltalk.gnu.org/documentation).
 
-Objective-c utiliza-se dos conceitos de [Dynamic typing](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/DynamicTyping.html) e [Message passing](https://en.wikipedia.org/wiki/Message_passing)
+Objective-c utiliza-se dos conceitos de [Dynamic typing](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/DynamicTyping.html) e [Message passing](https://en.wikipedia.org/wiki/Message_passing).
 
 ## Swift 
 
@@ -23,8 +23,7 @@ Ex:
 Uma simples função que exibe o valor do objeto passado por parâmetro.
 
 ```swift
-func swapTwoStrings(_ a: inout String, _ b: inout String) {
-  func exibeInt(_ a: Int) {
+func exibeInt(_ a: Int) {
     print("O int é: \(a)")
 }
 
@@ -35,5 +34,19 @@ func exibeString(_ a: String) {
 func exibeDouble(_ a: Double) {
     print("O double é: \(a)")
 }
+
+exibeInt(17)
+exibeString("Apple :)")
+exibeDouble(3.50)
+```
+Podemos subistitui-la por apenas uma, utilizando Generic Type.
+
+```swift
+func exibeValor<T>(_ a: T) {
+    print("O valor é: \(a)")
 }
+
+exibeValor(17)
+exibeValor("Apple :)")
+exibeValor(3.50)
 ```
