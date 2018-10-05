@@ -15,6 +15,15 @@ Objective-c utiliza-se dos conceitos de [Dynamic typing](https://developer.apple
 É uma linguagem relativamente nova, atualmente na versão 4.2. A Apple iniciou em 2010 e a lançou em 2014. Em 2015 Swift se tornou Open Source. Com abordagens modernas, sua principais caracteristicas são: 
 [generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html), [optionals](https://developer.apple.com/documentation/swift/optional), [type inference](https://en.wikipedia.org/wiki/Type_inference) e [higher-order functions](https://en.wikipedia.org/wiki/Message_passing).
 
+## Struct ou Classe
+
+Classes são do tipo "Reference Type" e Struct "Value Type". O que significa isso? Basicamente: 
+Struct (Value Type)
+cada instância mantém uma cópia exclusiva de seus dados. Um tipo que cria uma nova instância (cópia) quando atribuído a uma variável ou constante, ou quando passado para uma função.
+
+Classe (Reference Type)
+Cada instância compartilha uma única cópia dos dados. Um tipo que, uma vez inicializado, quando atribuído a uma variável ou constante, ou quando passado para uma função, retorna uma referência à mesma instância existente.
+
 ### Generics
 
 "Generics" permite criar um código flexivel, reutilizável, permitindo trabalhar com qualquer tipo, de acordo com os requisitos que você define. Muito da biblioteca do Swift é construido com Generics, como por exemplo Arrays e Dictionary que são coleções de genéricos.
@@ -39,7 +48,7 @@ exibeInt(17)
 exibeString("Apple :)")
 exibeDouble(3.50)
 ```
-Podemos subistitui-la por apenas uma, utilizando Generic Type.
+Podemos substitui-la por apenas uma, utilizando Generic Type.
 
 ```swift
 func exibeValor<T>(_ a: T) {
