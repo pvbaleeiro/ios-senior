@@ -24,6 +24,16 @@ cada instância mantém uma cópia exclusiva de seus dados. Um tipo que cria uma
 Classe (Reference Type)
 Cada instância compartilha uma única cópia dos dados. Um tipo que, uma vez inicializado, quando atribuído a uma variável ou constante, ou quando passado para uma função, retorna uma referência à mesma instância existente.
 
+## Comparações
+
+Estruturas e classes em Swift tem várias coisas em comum. São elas:
+
+- Definir propriedades para armazenar valores
+- Definir métodos para fornecer funcionalidades
+- Definir "subscripts" para fornecer acesso aos seus valores usando a sintaxe de subscript
+- Definir inicializadores para configurar um estado inicial
+- Estender para expandir funcionalidades
+
 ### Generics
 
 "Generics" permite criar um código flexivel, reutilizável, permitindo trabalhar com qualquer tipo, de acordo com os requisitos que você define. Muito da biblioteca do Swift é construido com Generics, como por exemplo Arrays e Dictionary que são coleções de genéricos.
