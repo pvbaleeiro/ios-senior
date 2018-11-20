@@ -69,3 +69,38 @@ exibeValor(17)
 exibeValor("Apple :)")
 exibeValor(3.50)
 ```
+
+## Design Patterns
+
+Podemos descrever basicamente como um modelo genérico para resolver uma situação. O padrão da arquitetura tem grande impacto 
+sobre toda a base de código. O que deve se ter em mente é que: não há uma arquitetura ruim. A escolha depende da situação, conhecimento, etc.
+
+### MVC
+
+Esse é o modelo básico utilizado nos projetos de iOS. Utiliza-se uma grande quantidade de UIViewController para controlar todas as views e trabalhar com os modelos necessários para apresentar ao usuário final. Podemos chamar um API Endpoint usando URLSession ou Alamofire, validar os dados de resposta e formatá-los para apresentá-los na tela.
+
+### MVVM
+
+Model-View-ViewModel é uma arquitetura que nos deixa mais perto de uma arquitetura limpa, mas não tão perto assim.
+
+### MVP
+
+Model View Presenter...
+
+### Viper
+
+
+![Modelo](https://imgur.com/mT6rdJ9)
+
+Baseado no principio [S.O.L.I.D](https://en.wikipedia.org/wiki/SOLID)
+
+
+
+
+
+
+
+# Referências
+
+Design Patterns / Viper: [ref](https://theswiftdev.com/2018/03/12/the-ultimate-viper-architecture-tutorial/)
+
